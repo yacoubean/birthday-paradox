@@ -40,7 +40,7 @@ def find_birthday_matches(birthday_list, num):
 
 
 birthdays = dict()
-with open("\\fillmore\\BI_Support_SSIS\\birthday_list.txt", "r") as namesFile:
+with open("birthday_list.txt", "r") as namesFile:
     birthday_reader = csv.DictReader(namesFile, delimiter='\t')
     for person in birthday_reader:
         birthdays[person['name']] = person['birthday']
