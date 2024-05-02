@@ -65,3 +65,4 @@ for j in range(group_size, 100):
     group_size += 1
 
 birthdays_collisions = pandas.DataFrame(tabular_data)
+print(birthdays_collisions.to_string())
